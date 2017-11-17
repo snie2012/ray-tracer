@@ -1,0 +1,22 @@
+.load_area {
+    padding: 10px;
+}
+
+#canvas {
+    /*background-color: black;*/
+    padding: 10px;
+}
+
+#progress_var {
+    padding: 10px;
+    display: inline;
+    color: red;
+}
+
+.render_buttons {
+    padding: 10px;
+}
+
+.custom_settings {
+    padding: 10px;
+}

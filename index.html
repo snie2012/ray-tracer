@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/> 
+</head>
+
+<body>
+    <div class='load_area'>
+        <div> Load obj file:
+        <input type="file" name="file" id="load_obj" value='load obj'>
+        </div>
+        <div> Load mtl file:
+        <input type="file" name="file" id="load_mtl" value='load mtl'>
+        </div>  
+    </div>
+
+    <div id='progress_bar' style="display: block; visibility: hidden;">Please wait while calculation intersections</div>
+    <canvas id="canvas" width=256 height=256></canvas>
+
+    <div class='render_buttons'>
+        <input id="plain_render" type="submit" value="Render without lighting" onclick="plain_render()">
+        <input id="light_render" type="submit" value="Render with lighting" onclick="lighting()">
+    </div>
+
+    <div class='custom_settings'>
+        <p>x<input id="eye_x" type="number" name="numberField"></p>
+        <p>y<input id="eye_y" type="number" name="numberField"></p>
+        <p>z<input id="eye_z" type="number" name="numberField"></p>
+        <input id="eye-submit" type="submit" value="Refresh" onclick="refresh()">
+    </div>
+
+    <script src='js/jquery-2.1.4.min.js'></script>
+    <script src="js/gl-matrix-min.js"></script>
+    <script src="js/geometry.js"></script>
+    <script src='js/parse.js'></script>
+    <script src="js/parse_obj.js"></script> 
+    <script src="js/parse_mtl.js"></script> 
+    <script src="js/main.js"></script>
+</body>
+
+</html>
